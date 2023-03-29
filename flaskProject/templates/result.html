@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат поиска по слову</title>
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap-5.0.0-beta1-dist/css/results_page.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="#">Словарь русского языка XI–XVII веков </a>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="main_page">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="search1">Поиск по словарю</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="source_search">Поиск по списку источников</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="full_list">Список заголовочных форм</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="main">
+    <div class="text3">
+    Всего найдено {{words_list|length}} вхождений.
+    </div>
+
+<br/>
+{% for i in range(0, words_list|length) %}
+<div id="up"><b><a href="result_{{ words_list[i] }}">{{ i+1}}. {{ words_list[i] }}</a></b></div>
+{% endfor %}
+
+</body>
+</html>
+
