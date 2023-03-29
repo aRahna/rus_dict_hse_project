@@ -179,9 +179,8 @@ def load_page(word):
                 text_to_see.append(res_extra[index_2][1])
         else:
             text_to_see.append(res[index_1][4])
-    print(text_to_see[0])
-    text_to_see = text_to_see[0].split("\n")
-    print(text_to_see)
+    if len(text_to_see) != 0:
+        text_to_see = text_to_see[0].split("\n")
     return text_to_see
 
 #отдельные поисковые запросы для тех условий, которые нельзя объединить

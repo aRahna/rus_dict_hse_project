@@ -43,8 +43,9 @@ def search_wrd():
 @app.route('/result_<word>', methods=['GET'])
 def result(word):
     print(word)
-    text = load_page(word)
-    print(text)
+    text = load_page(word.upper())
+    if text == []:
+        return render_template('result.html', words_list=text)
     return render_template('word_entry.html', word=text)
 
 @app.route('/result_list', methods=['GET'])
