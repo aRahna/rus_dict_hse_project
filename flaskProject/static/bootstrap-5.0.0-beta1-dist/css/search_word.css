@@ -10,15 +10,9 @@ body {
   width: 100%;
 }
 
-.column1 {
-  padding: 1rem;
-  border-radius: 8px;
-}
-
-
-.column2 {
-  padding: 1rem;
-  border-radius: 8px;
+.column {
+  float: left;
+  width: 50%;
 }
 
 .navbar {
@@ -578,4 +572,13 @@ label {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
+}
+
+button {
+  color: #a65238;
+  text-align: left;
+  padding: 8px 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
 }

@@ -30,13 +30,8 @@
             </ul>
         </div>
     </nav>
-
-    <div class="container">
+    <div class="column">
         <form method=POST action="{{ url_for('search_wrd') }}">
-        <div class="column">
-
-
-
             <div class="popup" onclick="InfoPopup()">Информация
               <span class="popuptext" id="myPopup">В данной версии поиска Вы можете заполнить только одно из следующих трех полей. В случае, если Вы попробуете, к приvеру, совершить поиск, заполнив поля "Поиск по заголовочному слову" и "Поиск по маске", Ваш поиск не увенчается успехом.</span>
             </div>
@@ -236,7 +231,7 @@
             </div>
 
 
-
+            <div class="column">
             <div class="container-fluid">
               <div class="form-group col-sm-8">
                   <label class="col-md-4 control-label" for="example_date_start_y">Дата написания (период в годах) </label>

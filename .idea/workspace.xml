@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8454b4d9-f4c0-48eb-bd30-6e26ba6e9d22" name="Changes" comment="" />
+    <list default="true" id="8454b4d9-f4c0-48eb-bd30-6e26ba6e9d22" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskProject/static/bootstrap-5.0.0-beta1-dist/css/search_word.css" beforeDir="false" afterPath="$PROJECT_DIR$/flaskProject/static/bootstrap-5.0.0-beta1-dist/css/search_word.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskProject/templates/search1.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskProject/templates/search1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskProject/templates/source_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskProject/templates/source_search.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +31,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -36,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680113548447</updated>
       <workItem from="1680113550605" duration="33000" />
+      <workItem from="1680115565267" duration="608000" />
     </task>
     <servers />
   </component>
