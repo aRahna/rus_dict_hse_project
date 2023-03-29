@@ -43,8 +43,9 @@ def search_wrd():
 @app.route('/result_<word>', methods=['GET'])
 def result(word):
     print(word)
-    text = load_page(word)
-    print(text)
+    text = load_page(word.upper())
+    if text == []:
+        return render_template('result.html', words_list=text)
     return render_template('word_entry.html', word=text)
 
 @app.route('/result_list', methods=['GET'])
@@ -54,11 +55,13 @@ def result_list(words_list):
 @app.route('/source_search', methods=['GET', 'POST'])
 def search_txt():
     if request.method == 'POST':
+        result = []
         query = []
         genres_search_result = []
         for i in request.form:
             parameter = i
             p_value = request.form.getlist(i)
+            #ищем отдельно по жанрам
             if parameter == "source_genre" and p_value[0] != '':
                 genres_search_result = resource_genre([parameter, p_value])
                 print(genres_search_result)
@@ -67,9 +70,15 @@ def search_txt():
                 if p_value[0] != '':
                     query.append([parameter, p_value])
         print(query)
-        result = list(set(search_query(join_search_tables(query), join_search_conditions(query))))
-        print(result)
-        if genres_search_result != []:
+        #если есть еще условия кроме нажра
+        if query != []:
+            result = list(set(search_query(join_search_tables(query), join_search_conditions(query))))
+            print(result)
+        else:
+            #иначе итоговые рез = поиск по жанрам
+            result = genres_search_result
+        #если они оба есть, найду пересечение
+        if genres_search_result != [] and query != []:
             result = list(set(genres_search_result) & set(result))
         if len(result) == 1:
             return redirect(url_for('result_<word>', word=result))
