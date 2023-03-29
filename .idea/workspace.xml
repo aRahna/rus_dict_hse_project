@@ -7,6 +7,7 @@
     <list default="true" id="8454b4d9-f4c0-48eb-bd30-6e26ba6e9d22" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskProject/static/bootstrap-5.0.0-beta1-dist/css/search_word.css" beforeDir="false" afterPath="$PROJECT_DIR$/flaskProject/static/bootstrap-5.0.0-beta1-dist/css/search_word.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskProject/static/bootstrap-5.0.0-beta1-dist/css/source.css" beforeDir="false" afterPath="$PROJECT_DIR$/flaskProject/static/bootstrap-5.0.0-beta1-dist/css/source.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskProject/templates/search1.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskProject/templates/search1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskProject/templates/source_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskProject/templates/source_search.html" afterDir="false" />
     </list>
@@ -48,11 +49,14 @@
       <option name="presentableId" value="Default" />
       <updated>1680113548447</updated>
       <workItem from="1680113550605" duration="33000" />
-      <workItem from="1680115565267" duration="608000" />
+      <workItem from="1680115565267" duration="1469000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/rus_dict_hse_project$app.coverage" NAME="app Coverage Results" MODIFIED="1680116263200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flaskProject" />
   </component>
 </project>

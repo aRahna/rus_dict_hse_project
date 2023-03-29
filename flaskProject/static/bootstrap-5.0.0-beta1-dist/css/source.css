@@ -247,3 +247,16 @@ body {
 #mySelectOptions4 label:hover {
   background-color: #1e90ff;
 }
+
+.button {
+  background-color: #a65238;
+  text-align: left;
+  position: absolute;
+  height: 50px;
+  left: 2.5%;
+  bottom: 5%;
+  width: 200px;
+  margin-left: -10px;
+  border-color: #555 transparent transparent transparent;
+  border-radius: 8px;
+}

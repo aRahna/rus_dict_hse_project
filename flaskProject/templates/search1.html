@@ -31,7 +31,7 @@
         </div>
     </nav>
     <div class="column">
-        <form method=POST action="{{ url_for('search_wrd') }}">
+        <f method=POST action="{{ url_for('search_wrd') }}">
             <div class="popup" onclick="InfoPopup()">Информация
               <span class="popuptext" id="myPopup">В данной версии поиска Вы можете заполнить только одно из следующих трех полей. В случае, если Вы попробуете, к приvеру, совершить поиск, заполнив поля "Поиск по заголовочному слову" и "Поиск по маске", Ваш поиск не увенчается успехом.</span>
             </div>
@@ -81,7 +81,26 @@
 
               </div>
             </div>
-            <!-- Select Basic -->
+
+             <div class="container-fluid">
+              <label class="col-md-4 control-label" for="gloss">Поиск по глоссам</label>
+              <div class="col-md-4">
+              <input id="gloss" name="gloss" type="text" class="form-control input-md">
+
+              </div>
+            </div>
+
+            <div class="container-fluid">
+              <label class="col-md-4 control-label" for="etymology">Поиск по этимологии</label>
+              <div class="col-md-4">
+              <input id="etymology" name="etymology" type="text" class="form-control input-md">
+
+              </div>
+            </div>
+        </div>
+
+        <div class="column">
+    <!-- Select Basic -->
               <div class="container-fluid">
                 <label for="pos" class="multiselect" >Часть речи</label>
                 <div id="pos" class="multiselect">
@@ -110,7 +129,6 @@
               </div>
 
             <div class="container-fluid">
-                <p>Грамматические признаки</p>
                 <label for="myMultiselect5" class="multiselect5" >Число</label>
                 <div id="myMultiselect5" class="multiselect5">
                   <div id="mySelectLabel5" class="selectBox5" onclick="toggleCheckboxArea5()">
@@ -213,22 +231,7 @@
             </div>
 
 
-
-            <div class="container-fluid">
-              <label class="col-md-4 control-label" for="gloss">Поиск по глоссам</label>
-              <div class="col-md-4">
-              <input id="gloss" name="gloss" type="text" class="form-control input-md">
-
-              </div>
-            </div>
-
-            <div class="container-fluid">
-              <label class="col-md-4 control-label" for="etymology">Поиск по этимологии</label>
-              <div class="col-md-4">
-              <input id="etymology" name="etymology" type="text" class="form-control input-md">
-
-              </div>
-            </div>
+    </div>
 
 
             <div class="column">
@@ -274,11 +277,9 @@
                     </select>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <button type="submit" class="button">Submit</button>
 
 
-    </div>
-    </form>
-    </div>
 </body>
 </html>

@@ -12,7 +12,7 @@ body {
 
 .column {
   float: left;
-  width: 50%;
+  width: 33%;
 }
 
 .navbar {
@@ -33,6 +33,10 @@ body {
     justify-content: flex-end;
 }
 
+.p {
+  font-size: large;
+  margin-top: 1em;
+}
 .text-white1 {
 	color: #d4ceb0;
 	margin-left: 1em;
@@ -552,7 +556,7 @@ label {
   z-index: 1;
   bottom: -500%;
   left: 50%;
-  margin-left: -80px;
+  margin-left: 20px;
 }
 
 /* Popup arrow */
@@ -560,8 +564,8 @@ label {
   content: "";
   position: absolute;
   top: -50%;
-  left: 100%;
-  margin-left: -5px;
+  left: 1000%;
+  margin-left: 20px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
@@ -574,11 +578,15 @@ label {
   animation: fadeIn 1s;
 }
 
-button {
-  color: #a65238;
+.button {
+  background-color: #a65238;
   text-align: left;
-  padding: 8px 0;
   position: absolute;
-  left: 50%;
-  margin-left: -20px;
+  height: 50px;
+  left: 2.5%;
+  bottom: 5%;
+  width: 200px;
+  margin-left: -10px;
+  border-color: #555 transparent transparent transparent;
+  border-radius: 8px;
 }
